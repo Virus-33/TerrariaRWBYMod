@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\bin\\Debug",
+    "\\bin\\Debug\\net6.0",
+    "\\Content",
+    "\\Content\\Accessories",
+    "\\Content\\DamageClasses",
+    "\\Content\\Items",
+    "\\Content\\Weapons",
+    "\\obj\\Debug",
+    "\\obj\\Release"
+  ],
+  "SelectedNode": "\\Content\\Weapons\\HunterAxe.cs",
+  "PreviewInSolutionExplorer": false
+}

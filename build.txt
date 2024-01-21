@@ -1,0 +1,3 @@
+displayName = The Hunt Mod
+author = Dalek-Kep
+version = 0.1
