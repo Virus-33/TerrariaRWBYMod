@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "f2IrNKL0C0tDrmPyp3t9l3FHAZoJTK9C/FcCPViThd1CZ6hWYmu8Nekn2ddn/5/Juit5M1zVS+uu+ZVMy0FELA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Professional\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\RWBY\\RWBY.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Professional\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512"
+  ],
+  "logs": []
+}

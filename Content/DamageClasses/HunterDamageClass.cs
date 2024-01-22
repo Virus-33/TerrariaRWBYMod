@@ -1,4 +1,5 @@
 using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace RWBY.Content.DamageClasses
@@ -7,6 +8,16 @@ namespace RWBY.Content.DamageClasses
     {
         public override StatInheritanceData GetModifierInheritance(DamageClass damageClass)
         {
+            if (damageClass == DamageClass.Generic)
+            {
+                return new StatInheritanceData(
+                damageInheritance: 1f,
+                critChanceInheritance: 0f,
+                attackSpeedInheritance: 1f,
+                armorPenInheritance: 1f,
+                knockbackInheritance: 1f);
+            }
+
             if (damageClass == DamageClass.Melee)
             {
                 return new StatInheritanceData(

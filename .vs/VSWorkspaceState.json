@@ -1,16 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\bin\\Debug",
-    "\\bin\\Debug\\net6.0",
     "\\Content",
-    "\\Content\\Accessories",
-    "\\Content\\DamageClasses",
     "\\Content\\Items",
     "\\Content\\Weapons",
-    "\\obj\\Debug",
-    "\\obj\\Release"
+    "\\Content\\Weapons\\BlowhardFolder",
+    "\\Content\\Weapons\\HunterAxeFolder",
+    "\\Localization",
+    "\\Utility"
   ],
-  "SelectedNode": "\\Content\\Weapons\\HunterAxe.cs",
+  "SelectedNode": "\\Content\\Weapons\\BlowhardFolder\\Blowhard.cs",
   "PreviewInSolutionExplorer": false
 }

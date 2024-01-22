@@ -11,6 +11,14 @@ Items: {
 
 	HunterAxe: {
 		DisplayName: Hunter Axe
-		Tooltip: Strangely, but Grimm's blood isn't evaporated yet
+		Tooltip: "Strangely, but Grimm's blood isn't evaporated yet"
 	}
+
+	Blowhard: {
+		DisplayName: Blowhard
+		Tooltip: ""
+	}
+
 }
+
+"Keybinds.Transform Weapon.DisplayName": Transform  Weapon

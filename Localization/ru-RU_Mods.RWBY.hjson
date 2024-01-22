@@ -11,6 +11,13 @@ Items: {
 
 	HunterAxe: {
 		DisplayName: Топор охотника
-		Tooltip: Странно, но кровь Гримм всё ещё не испарилась с его лезвия
+		Tooltip: Странно, но кровь Гримм всё ещё не испарилась с его лезвия.
+	}
+
+	Blowhard: {
+		 DisplayName: Хвастун
+		 Tooltip: ""
 	}
 }
+
+"Keybinds.Transform Weapon.DisplayName": Переключить режим оружия
