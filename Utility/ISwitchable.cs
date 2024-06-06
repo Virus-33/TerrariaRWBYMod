@@ -1,9 +1,10 @@
-﻿
+﻿using Terraria;
+using Terraria.ModLoader;
 
 namespace RWBY.Utility
 {
     public interface ISwitchable
     {
-        public void SwitchWeaponMode();
+        public ModItem SwitchWeaponMode();
     }
 }

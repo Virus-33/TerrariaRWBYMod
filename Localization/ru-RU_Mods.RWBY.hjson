@@ -15,8 +15,23 @@ Items: {
 	}
 
 	Blowhard: {
-		 DisplayName: Хвастун
-		 Tooltip: ""
+		DisplayName: Хвастун
+		Tooltip: ""
+	}
+
+	BlowhardShooter: {
+		DisplayName: Хвастун
+		Tooltip: ""
+	}
+
+	QueenServantsBlade: {
+		// DisplayName: Queen Servants Blade
+		// Tooltip: ""
+	}
+
+	QueenServantsShooter: {
+		// DisplayName: Queen Servants Shooter
+		// Tooltip: ""
 	}
 }
 

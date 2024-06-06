@@ -1,5 +1,6 @@
 using Microsoft.Xna.Framework;
 using RWBY.Content.DamageClasses;
+using RWBY.Content.Weapons.BlowhardShooterFolder;
 using RWBY.Content.Weapons.HunterAxeFolder;
 using RWBY.Utility;
 using Terraria;
@@ -10,29 +11,32 @@ namespace RWBY.Content.Weapons.BlowhardFolder
 {
     public class Blowhard : ModItem, ISwitchable
     {
-        public int CurrentState;
-
+        public ModItem SecondState;
+        
         public override void SetDefaults()
         {
             Item.DamageType = ModContent.GetInstance<HunterDamageClass>();
             Item.crit = 0;
             Item.width = 45;
             Item.height = 40;
+            Item.ArmorPenetration = 2;
 
             Item.useStyle = ItemUseStyleID.Swing;
             Item.useTime = 30;
             Item.useAnimation = 30;
-            Item.autoReuse = false;
+            Item.autoReuse = true;
 
-            Item.damage = 18;
+            Item.damage = 20;
             Item.knockBack = 8;
 
-            Item.value = Item.buyPrice(0, 0, 3, 5);
+            Item.value = Item.buyPrice(0, 0, 35, 5);
             Item.rare = ItemRarityID.Blue;
             Item.UseSound = SoundID.Item1;
 
-            CurrentState = 0;
+            SecondState = ModContent.GetInstance<BlowhardShooter>();
         }
+
+        public bool CanHavePrefixes() => true;
 
         public override void AddRecipes()
         {
@@ -42,25 +46,9 @@ namespace RWBY.Content.Weapons.BlowhardFolder
             recipe.Register();
         }
 
-        public void SwitchWeaponMode()
+        public ModItem SwitchWeaponMode()
         {
-            if (CurrentState == 0)
-            {
-                CurrentState = 1;
-                Item.useStyle = ItemUseStyleID.Shoot;
-                Item.useAmmo = AmmoID.Bullet;
-                Item.shootSpeed = 16f;
-                Item.shoot = ProjectileID.PurificationPowder;
-                // There will be sound that must be played
-            }
-            else
-            {
-                CurrentState = 0;
-                Item.useStyle = ItemUseStyleID.Swing;
-                Item.useAmmo = AmmoID.None;
-                Item.shootSpeed = 0f;
-                Item.shoot = ProjectileID.None;
-            }
+            return SecondState;
         }
     }
 }

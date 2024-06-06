@@ -5,9 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Terraria;
+using Terraria.Chat;
 using Terraria.GameInput;
+using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.Server;
+using Terraria.UI.Chat;
 
 namespace RWBY
 {
@@ -15,21 +18,17 @@ namespace RWBY
     {
         public override void ProcessTriggers(TriggersSet triggersSet)
         {
-            if (RWBY.GetTransformHotKey().JustPressed && Player.itemAnimation == 0)
+            if (RWBY.GetTransformHotKey().JustPressed)
             {
-                Item inHand = Player.inventory[Player.selectedItem];
+                ModItem inHand = Player.inventory[Player.selectedItem].ModItem;
                 if (inHand is ISwitchable)
                 {
-                    try
-                    {
-                        ISwitchable holdItem = (ISwitchable)inHand;
-                        holdItem.SwitchWeaponMode();
-                    }
-                    catch (Exception e)
-                    {
-                        Terraria.Chat.ChatMessage a = new("Error: " + e.ToString());
-                        a.Consume();
-                    }
+                    int item_prefix = Player.inventory[Player.selectedItem].prefix;
+                    ISwitchable holdItem = (ISwitchable)inHand;
+                    Item newMode = holdItem.SwitchWeaponMode().Item;
+                    if (item_prefix != 0) { newMode.Prefix(item_prefix); }
+                    Player.inventory[Player.selectedItem] = newMode.Clone();
+                    Player.inventory[Player.selectedItem].SetDefaults(newMode.type);
                 }
             }
 
