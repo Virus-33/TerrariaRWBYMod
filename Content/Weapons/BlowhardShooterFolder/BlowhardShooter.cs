@@ -23,16 +23,17 @@ namespace RWBY.Content.Weapons.BlowhardShooterFolder
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.useAmmo = AmmoID.Bullet;
             Item.shootSpeed = 7f;
-            Item.useTime = 20;
-            Item.useAnimation = 20;
+            Item.useTime = 40;
+            Item.useAnimation = 40;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.autoReuse = false;
 
-            Item.value = Item.buyPrice(0, 0, 35, 5);
-            Item.rare = ItemRarityID.Blue;
+            Item.value = Item.buyPrice(0, 0, 5, 5);
+            Item.rare = ItemRarityID.White;
             Item.UseSound = SoundID.Item11;
 
         }
+
+        public bool CanHavePrefixes() => true;
 
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {

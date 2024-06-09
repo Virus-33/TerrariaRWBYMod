@@ -16,7 +16,6 @@ namespace RWBY.Content.Weapons.HunterAxeFolder
             Item.useStyle = ItemUseStyleID.Swing;
             Item.useTime = 30;
             Item.useAnimation = 30;
-            Item.autoReuse = false; 
 
             Item.DamageType = ModContent.GetInstance<HunterDamageClass>();
             Item.crit = 0;
@@ -27,6 +26,8 @@ namespace RWBY.Content.Weapons.HunterAxeFolder
             Item.value = Item.buyPrice(0, 0, 3, 5);
             Item.rare = ItemRarityID.White;
             Item.UseSound = SoundID.Item1;
+
+            Item.axe = 7;
         }
 
         public override void AddRecipes()

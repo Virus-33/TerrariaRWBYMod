@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RWBY")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23c27d197a054a42c1bae1fdf63e010bab338a3d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+636ed8698072185acdef2949f976c084743efa22")]
 [assembly: System.Reflection.AssemblyProductAttribute("RWBY")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RWBY")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

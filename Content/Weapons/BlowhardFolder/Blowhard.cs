@@ -24,16 +24,15 @@ namespace RWBY.Content.Weapons.BlowhardFolder
             Item.useStyle = ItemUseStyleID.Swing;
             Item.useTime = 30;
             Item.useAnimation = 30;
-            Item.autoReuse = true;
 
             Item.damage = 20;
             Item.knockBack = 8;
 
-            Item.value = Item.buyPrice(0, 0, 35, 5);
+            Item.value = Item.buyPrice(0, 0, 5, 5);
             Item.rare = ItemRarityID.Blue;
             Item.UseSound = SoundID.Item1;
 
-            SecondState = ModContent.GetInstance<BlowhardShooter>();
+            Item.axe = 8;
         }
 
         public bool CanHavePrefixes() => true;
@@ -48,7 +47,7 @@ namespace RWBY.Content.Weapons.BlowhardFolder
 
         public ModItem SwitchWeaponMode()
         {
-            return SecondState;
+            return ModContent.GetInstance<BlowhardShooter>();
         }
     }
 }
